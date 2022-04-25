@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Cakes and Bakes</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="logo.jpg" class="logo"></a>
+                <div class="left">Cakes and Bakes</div>
+                <div class="navbar">
+                <ul>
+                    <li><a href="#" class="navbar">Home</a></li>
+                    <li><a href="#" class="navbar">Menu</a></li>
+                    <li><a href="#" class="navbar">My Orders</a></li>
+                    <li><a href="#" class="navbar">Contact Us</a></li>
+                    
+                </ul>
+                </div>
+            </header>
+            <div class="content">
+              <div class="textBox">
+                <h2>Welcome to the world of<br><span>Cakes and Bakes!</span></h2>
+                <h4>Have a sweet tooth? Want to fulfill those sugar cravings? 
+                    Party Cakes? Themed Cakes? Say no more! 
+                    We here at Cakes and Bakes believe in baking the yummiest , mouth-watering Cakes! 
+                    Baked and Customized to perfection! Perfection by confection!</h4>
+                    <a href="#">Learn More</a>
+              </div>
+                    <div class="imgBox">
+                        <img src="Cakes.jpg" class="Cakes">
+                    </div>
+                
+            </div>
+            <ul class="thumb">
+                <li><img src=thumb1.jpg onclick="imgSlider('img1.jpg');changeCircleColor(' rgb(232, 209, 209)')"></li>
+                <li><img src=thumb2.jpg onclick="imgSlider('img2.jpg');changeCircleColor( 'rgb(207, 131, 181)')"></li>
+                <li><img src=thumb3.jpg onclick="imgSlider('img3.png');changeCircleColor('rgb(244, 181, 247)')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"</a></li>
+                <li><a href="#"><img src="twitter.jpg"</a></li>
+                <li><a href="#"><img src="instagram.jpg"</a></li>
+            </ul>
+        </section>
+        
+        <script type="text/javascript">
+            function imgSlider(anything)
+            {
+                document.querySelector('.Cakes').src=anything;
+
+            }
+            function changeCircleColor(color)
+            {
+                const circle= document.querySelector('.circle');
+                circle.style.background=color;
+            }
+        </script>
+        </body>
+</html>
